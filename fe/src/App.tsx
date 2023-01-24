@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import "./App.css";
+import "./App.scss";
 import Room from "./pages/Room";
 
 export default function App() {

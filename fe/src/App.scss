@@ -1,0 +1,77 @@
+.App {
+  max-width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  inset: 0;
+  background-color: black;
+}
+
+.Home {
+  background-color: white;
+}
+
+.Room {
+  max-width: 100vw;
+  height: 100%;
+  background-color: red;
+  .videos {
+    height: 100%;
+    width: 100%;
+  }
+  .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 1rem;
+    gap: 1rem;
+  }
+}
+
+.Button {
+  cursor: pointer;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 300ms;
+  &.active {
+    background-color: #5471ff;
+    &#phone {
+      background-color: #f25555;
+    }
+  }
+  &.disabled {
+    background-color: #b5b7ba;
+    &#phone {
+      background-color: #5471ff;
+    }
+  }
+  svg {
+    font-size: 2rem;
+    color: white;
+  }
+}
+
+.Video {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  video {
+    position: relative;
+    width: 100%;
+    &#my {
+      max-width: 100vw;
+    }
+    &#your {
+      max-width: 20vw;
+    }
+  }
+}
