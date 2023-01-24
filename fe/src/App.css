@@ -1,0 +1,13 @@
+.App {
+  position: fixed;
+  inset: 0;
+  background-color: black;
+}
+
+.Home {
+  background-color: white;
+}
+
+.Room {
+  background-color: white;
+}
